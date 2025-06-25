@@ -1,14 +1,14 @@
 import tkinter as tk
 from tkinter import messagebox
-from Age_calculator import DOB, calculate_AGE,save_record_to_file
+from Age_calculator import DOB, calculate_AGE,save_details_to_file
 from datetime import datetime
 import os
 
-# File to store age records
-DATA_FILE = "age_records.txt"
+# File to store age details
+DATA_FILE = "age_details.txt"
 
-# List to keep session age records
-age_records = []
+# List to keep session age details
+age_details = []
 
 #------Functions------
 
@@ -24,10 +24,14 @@ def find_age(dob):
         determined_age -= 1
     return determined_age
 
-def save_record_to_file (filename,record):
-    """Saves an additional record to the text file."""
+def save_details_to_file (filename,details):
+    """Saves an additional details to the text file."""
     with open(filename,"a") as f:
-        f.save(record + "\n")
+        f.save(details + "\n")
+
+
+        
+
 
 
 
