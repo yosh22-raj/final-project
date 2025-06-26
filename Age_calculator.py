@@ -40,3 +40,21 @@ def find_age_gui():
     except ValueError:
         messagebox.showerror("Weak Input", "Please enter the correct DOB in YYYY-MM-DD format.")
 
+
+#-----Code for GUI-----
+root = tk.Tk()
+root.title("Age Calculator")
+root.geometry("350x200")
+root.resizable(False, False)
+
+tk.Label(root, text="Enter your DOB (YYYY-MM-DD):").pack(pady=10)
+dob_entry = tk.Entry(root, width=30)
+dob_entry.pack()
+
+tk.Button(root, text="Find Age", command=find_age_gui).pack(pady=10)
+
+result_label = tk.Label(root, text="Age: ", font=("Arial", 12))
+result_label.pack(pady=10)
+
+root.mainloop()
+

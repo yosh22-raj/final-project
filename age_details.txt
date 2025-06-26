@@ -1,3 +1,6 @@
 DOB: 2006-12-22 => Age: 18 years
 DOB: 1996-12-20 => Age: 28 years
 DOB: 2008-12-02 => Age: 16 years
+DOB: 2006-12-13 => Age: 18 years
+DOB: 1996-08-25 => Age: 28 years
+DOB: 2000-01-01 => Age: 25 years
